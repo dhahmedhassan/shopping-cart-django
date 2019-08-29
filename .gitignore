@@ -12,3 +12,4 @@ media
 /.env
 /.vscode
 .vscode/settings.json
+**/migrations/
