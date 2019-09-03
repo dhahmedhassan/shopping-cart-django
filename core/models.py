@@ -25,6 +25,7 @@ class Item(models.Model):
                              max_length=1, default=LABEL_CHOICES[0][0])
     slug = models.SlugField()
     description = models.TextField(default='Here is the Discription')
+    quantity = models.IntegerField(default=1)
 
     def __str__(self):
         return self.title
