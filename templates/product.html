@@ -3,9 +3,9 @@
 {% block head_title %}Detail Product{% endblock %}
 
 {% block content %}
-::before
+
 <!--Grid row-->
-<div class="row wow fadeIn mt-5">
+<div class="row wow fadeIn mt-5 pt-4">
 
   <!--Grid column-->
   <div class="col-md-6 mb-4">
@@ -59,6 +59,8 @@
       </form>{% endcomment %}
       <a href="{{ object.get_add_to_cart_url }}" class="btn btn-primary btn-md my-0 p">Add to cart
         <i class="fas fa-shopping-cart ml-1"></i>
+      </a>
+      <a href="{{ object.get_remove_from_cart_url }}" class="btn btn-danger btn-md my-0 p">Remove from cart
       </a>
 
     </div>
