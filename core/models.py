@@ -64,5 +64,5 @@ class Order(models.Model):
     ordered_date = models.DateTimeField()
     ordered = models.BooleanField(default=False)
 
-    # def __str__(self):
-    #     return self.title
+    def __str__(self):
+        return self.user.username
